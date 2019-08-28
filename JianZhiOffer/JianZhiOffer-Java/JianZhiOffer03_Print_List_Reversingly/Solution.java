@@ -1,4 +1,4 @@
-package JianZhiOffer03_Print_List_Reversingly;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer03_Print_List_Reversingly;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,6 +10,7 @@ public class Solution {
             ans.add(listNode.val);
             listNode = listNode.next;
         }
+        //调用集合的反转函数
         Collections.reverse(ans);
         return ans;
     }
