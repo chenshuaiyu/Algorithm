@@ -1,4 +1,4 @@
-package JianZhiOffer01_Find_in_Partially_Sorted_Matrix;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer01_Find_in_Partially_Sorted_Matrix;
 
 public class Solution {
     public boolean Find(int target, int[][] array) {
@@ -9,9 +9,6 @@ public class Solution {
             else
                 row++;
         }
-        if (col >= 0 && row < array.length)
-            return true;
-        else
-            return false;
+        return col >= 0 && row < array.length;
     }
 }
