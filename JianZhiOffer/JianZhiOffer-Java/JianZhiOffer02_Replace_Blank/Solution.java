@@ -1,14 +1,11 @@
-package JianZhiOffer02_Replace_Blank;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer02_Replace_Blank;
 
 public class Solution {
     //效率高
     public String replaceSpace(StringBuffer str) {
         StringBuilder ans = new StringBuilder();
         for (char c : str.toString().toCharArray()) {
-            if (c == ' ')
-                ans.append("%20");
-            else
-                ans.append(c);
+            ans.append(c == ' ' ? "%20" : c);
         }
         return ans.toString();
     }
@@ -29,8 +26,7 @@ public class Solution {
                 str.setCharAt(i2--, '2');
                 str.setCharAt(i2--, '%');
             } else {
-                str.setCharAt(i2, str.charAt(i1));
-                i2--;
+                str.setCharAt(i2--, str.charAt(i1));
             }
             i1--;
         }
