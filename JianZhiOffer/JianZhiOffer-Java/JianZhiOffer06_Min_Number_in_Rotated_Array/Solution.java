@@ -1,4 +1,4 @@
-package JianZhiOffer06_Min_Number_in_Rotated_Array;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer06_Min_Number_in_Rotated_Array;
 
 public class Solution {
     public int minNumberInRotateArray(int[] array) {
@@ -16,9 +16,18 @@ public class Solution {
         return array[l];
     }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int ans = solution.minNumberInRotateArray(new int[]{4, 5, 1, 2, 3});
-        System.out.println(ans);
+    public int minNumberInRotateArray1(int[] array) {
+        if (array.length == 0) return 0;
+        int l = 0, r = array.length - 1, mid;
+        while (l < r) {
+            mid = l + (r - l) / 2;
+            if (array[mid] > array[r])
+                l = mid + 1;
+            else if (array[mid] == array[r])
+                r = r - 1;
+            else
+                r = mid;
+        }
+        return array[l];
     }
 }
