@@ -1,7 +1,7 @@
-package JianZhiOffer10_Rect_Cover;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer10_Rect_Cover;
 
 public class Solution {
-    //斐波拉切数列的应用
+    //斐波拉切数列的应用 f(n) = f(n - 1) + f(n - 2)
     public int RectCover(int target) {
         if (target <= 2) return target;
         int ans = 0, n1 = 1, n2 = 2;
