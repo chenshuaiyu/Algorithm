@@ -2,6 +2,9 @@ package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer01_Find_in_Partially_Sorted_M
 
 public class Solution {
     public boolean Find(int target, int[][] array) {
+        if (array == null || array.length == 0) {
+            return false;
+        }
         int row = 0, col = array[0].length - 1;
         while (col >= 0 && row < array.length && array[row][col] != target) {
             if (array[row][col] > target)

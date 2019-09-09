@@ -1,4 +1,4 @@
-package JianZhiOffer20_Min_in_Stack;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer20_Min_in_Stack;
 
 import java.util.Stack;
 
@@ -8,12 +8,14 @@ public class Solution {
 
     public void push(int node) {
         stack.push(node);
+        //更新最小数栈
         if (minStack.isEmpty() || minStack.peek() > node)
             minStack.push(node);
     }
 
     public void pop() {
         int n = stack.pop();
+        //判断是否为最小数出栈
         if (n == minStack.peek())
             minStack.pop();
     }

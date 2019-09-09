@@ -11,4 +11,10 @@ public class Solution {
         }
         return ans;
     }
+
+    //递归实现
+    public int Fibonacci1(int n) {
+        if (n <= 1) return n;
+        return Fibonacci1(n - 1) + Fibonacci1(n - 2);
+    }
 }

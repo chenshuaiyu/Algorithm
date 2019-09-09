@@ -1,9 +1,10 @@
-package JianZhiOffer17_Substructure_in_Tree;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer17_Substructure_in_Tree;
 
 public class Solution {
     public boolean HasSubtree(TreeNode root1, TreeNode root2) {
         boolean ans = false;
         if (root1 != null && root2 != null) {
+            //查找值相等的节点
             if (root1.val == root2.val)
                 ans = isSubtree(root1, root2);
             if (!ans)

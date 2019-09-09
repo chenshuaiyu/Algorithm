@@ -1,4 +1,4 @@
-package JianZhiOffer16_Merge_Sorted_Lists;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer16_Merge_Sorted_Lists;
 
 public class ListNode {
     int val;

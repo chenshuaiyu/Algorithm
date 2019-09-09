@@ -1,4 +1,4 @@
-package JianZhiOffer15_Reverse_List;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer15_Reverse_List;
 
 public class ListNode {
     int val;

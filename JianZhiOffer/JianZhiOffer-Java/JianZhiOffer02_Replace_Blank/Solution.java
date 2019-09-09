@@ -1,8 +1,18 @@
 package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer02_Replace_Blank;
 
 public class Solution {
+    public String replaceSpace2(StringBuffer str) {
+        if (str == null || str.length() == 0) {
+            return "";
+        }
+        return str.toString().replaceAll(" ", "%20");
+    }
+
     //效率高
-    public String replaceSpace(StringBuffer str) {
+    public String replaceSpace1(StringBuffer str) {
+        if (str == null || str.length() == 0) {
+            return "";
+        }
         StringBuilder ans = new StringBuilder();
         for (char c : str.toString().toCharArray()) {
             ans.append(c == ' ' ? "%20" : c);
@@ -10,7 +20,10 @@ public class Solution {
         return ans.toString();
     }
 
-    public String replaceSpace1(StringBuffer str) {
+    public String replaceSpace(StringBuffer str) {
+        if (str == null || str.length() == 0) {
+            return "";
+        }
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == ' ')

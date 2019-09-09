@@ -1,4 +1,4 @@
-package JianZhiOffer14_Kth_Node_from_End;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer14_Kth_Node_from_End;
 
 public class ListNode {
     int val;

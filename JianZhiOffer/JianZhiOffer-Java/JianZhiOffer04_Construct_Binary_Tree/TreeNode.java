@@ -1,4 +1,4 @@
-package JianZhiOffer04_Construct_Binary_Tree;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer04_Construct_Binary_Tree;
 
 public class TreeNode {
     int val;

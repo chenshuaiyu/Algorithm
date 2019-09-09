@@ -1,4 +1,4 @@
-package JianZhiOffer17_Substructure_in_Tree;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer17_Substructure_in_Tree;
 
 public class TreeNode {
     int val = 0;

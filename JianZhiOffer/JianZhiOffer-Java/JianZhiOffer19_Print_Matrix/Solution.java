@@ -1,4 +1,4 @@
-package JianZhiOffer19_Print_Matrix;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer19_Print_Matrix;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ public class Solution {
         ArrayList<Integer> ans = new ArrayList<>();
         if (matrix == null || matrix.length == 0) return ans;
         if (matrix[0] == null || matrix[0].length == 0) return ans;
-
+        //变换坐标
         int top = 0, bottom = matrix.length - 1, left = 0, right = matrix[0].length - 1;
         int n = 1;
         while (top <= bottom && left <= right) {
