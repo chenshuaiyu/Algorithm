@@ -1,4 +1,4 @@
-package JianZhiOffer50_Duplicate;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer50_Duplicate;
 
 public class Solution {
     // Parameters:
@@ -10,6 +10,22 @@ public class Solution {
     // Return value:       true if the input is valid, and there are some duplications in the array number
     //                     otherwise false
     public boolean duplicate(int numbers[], int length, int[] duplication) {
+        if (numbers == null || numbers.length == 0) {
+            duplication[0] = -1;
+            return false;
+        }
+        boolean[] flag = new boolean[length];
+        for (int n : numbers) {
+            if (flag[n]) {
+                duplication[0] = n;
+                return true;
+            }
+            flag[n] = true;
+        }
+        return false;
+    }
+
+    public boolean duplicate1(int numbers[], int length, int[] duplication) {
         if (numbers == null || numbers.length == 0) {
             duplication[0] = -1;
             return false;

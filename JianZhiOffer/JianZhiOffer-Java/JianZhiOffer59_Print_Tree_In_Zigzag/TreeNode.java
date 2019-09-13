@@ -1,4 +1,4 @@
-package JianZhiOffer59_Print_Tree_In_Zigzag;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer59_Print_Tree_In_Zigzag;
 
 public class TreeNode {
     int val = 0;

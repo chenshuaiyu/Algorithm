@@ -1,4 +1,4 @@
-package JianZhiOffer43_Left_Rotate_String;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer43_Left_Rotate_String;
 
 public class Solution {
     public String LeftRotateString(String str, int n) {

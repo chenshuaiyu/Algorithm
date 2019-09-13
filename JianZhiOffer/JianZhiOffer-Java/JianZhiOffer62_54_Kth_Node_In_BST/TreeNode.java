@@ -1,4 +1,4 @@
-package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer60_Print_Tree_In_Row;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer62_54_Kth_Node_In_BST;
 
 public class TreeNode {
     int val = 0;

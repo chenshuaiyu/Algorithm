@@ -3,12 +3,14 @@ package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer51_Multiply;
 public class Solution {
     public int[] multiply(int[] A) {
         int[] B = new int[A.length];
+        //从前往后遍历
         for (int i = 0; i < A.length; i++) {
             if (i - 1 >= 0)
                 B[i] = B[i - 1] * A[i - 1];
             else
                 B[i] = 1;
         }
+        //从后往前遍历
         int temp = 1;
         for (int i = A.length - 1; i >= 0; i--) {
             if (i + 1 < A.length) {

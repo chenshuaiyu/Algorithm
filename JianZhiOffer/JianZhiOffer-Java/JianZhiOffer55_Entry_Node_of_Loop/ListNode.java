@@ -1,4 +1,4 @@
-package JianZhiOffer55_Entry_Node_of_Loop;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer55_Entry_Node_of_Loop;
 
 public class ListNode {
     int val;

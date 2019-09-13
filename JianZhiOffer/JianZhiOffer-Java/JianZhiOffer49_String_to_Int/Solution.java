@@ -1,4 +1,4 @@
-package JianZhiOffer49_String_to_Int;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer49_String_to_Int;
 
 public class Solution {
     public int StrToInt(String str) {

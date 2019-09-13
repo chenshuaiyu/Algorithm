@@ -1,4 +1,4 @@
-package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer60_Print_Tree_In_Row;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer61_Serialize_BinaryTrees;
 
 public class TreeNode {
     int val = 0;
@@ -7,5 +7,6 @@ public class TreeNode {
 
     public TreeNode(int val) {
         this.val = val;
+
     }
 }

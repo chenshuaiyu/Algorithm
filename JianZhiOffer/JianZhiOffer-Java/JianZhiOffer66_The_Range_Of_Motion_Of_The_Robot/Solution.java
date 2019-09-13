@@ -1,4 +1,4 @@
-package JianZhiOffer66_The_Range_Of_Motion_Of_The_Robot;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer66_The_Range_Of_Motion_Of_The_Robot;
 
 public class Solution {
     private int ans = 0;

@@ -1,4 +1,4 @@
-package JianZhiOffer54_First_Appearing_Once;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer54_First_Appearing_Once;
 
 public class Solution {
     private int[] arr = new int[256];

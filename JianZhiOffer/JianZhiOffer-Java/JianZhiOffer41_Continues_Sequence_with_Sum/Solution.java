@@ -1,4 +1,4 @@
-package JianZhiOffer41_Continues_Sequence_with_Sum;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer41_Continues_Sequence_with_Sum;
 
 import java.util.ArrayList;
 
@@ -7,6 +7,7 @@ public class Solution {
         ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
         int l = 1, r = 2;
         while (l < r) {
+            //(首项 + 末项) * 项数 / 2
             int n = (l + r) * (r - l + 1) / 2;
             if (n == sum) {
                 ArrayList<Integer> list = new ArrayList<>();

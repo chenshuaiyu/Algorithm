@@ -1,4 +1,4 @@
-package JianZhiOffer65_Paths_In_The_Matrix;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer65_Paths_In_The_Matrix;
 
 public class Solution {
     private int[] visited;
