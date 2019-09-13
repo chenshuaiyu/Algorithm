@@ -1,4 +1,4 @@
-package JianZhiOffer23_Sequence_of_BST;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer23_Sequence_of_BST;
 
 
 public class Solution {
@@ -13,6 +13,7 @@ public class Solution {
         int i;
         for (i = r - 1; i >= 0 && sequence[i] > sequence[r]; i--) {
         }
+        //判断左子树中有无大于根节点的值
         for (int j = i; j >= 0; j--) {
             if (sequence[j] > sequence[r])
                 return false;

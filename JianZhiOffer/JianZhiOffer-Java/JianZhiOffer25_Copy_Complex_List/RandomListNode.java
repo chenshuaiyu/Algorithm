@@ -1,4 +1,4 @@
-package JianZhiOffer25_Copy_Complex_List;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer25_Copy_Complex_List;
 
 public class RandomListNode {
     int label;

@@ -1,4 +1,4 @@
-package JianZhiOffer30_Greatest_Sum_of_Subarrays;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer30_Greatest_Sum_of_Subarrays;
 
 public class Solution {
     public int FindGreatestSumOfSubArray(int[] array) {

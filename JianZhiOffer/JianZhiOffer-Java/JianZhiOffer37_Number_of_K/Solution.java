@@ -1,4 +1,7 @@
-package JianZhiOffer37_Number_of_K;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer37_Number_of_K;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
     public int GetNumberOfK(int[] array, int k) {
@@ -41,5 +44,13 @@ public class Solution {
                 return mid;
         }
         return -1;
+    }
+
+    public int GetNumberOfK1(int[] array, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int a : array) {
+            map.put(a, map.getOrDefault(a, 0) + 1);
+        }
+        return map.getOrDefault(k, 0);
     }
 }

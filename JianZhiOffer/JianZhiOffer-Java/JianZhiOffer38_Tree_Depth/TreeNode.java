@@ -1,4 +1,4 @@
-package JianZhiOffer38_Tree_Depth;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer38_Tree_Depth;
 
 public class TreeNode {
     int val = 0;

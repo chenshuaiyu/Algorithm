@@ -1,10 +1,10 @@
-package JianZhiOffer38_Tree_Depth;
-
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer38_Tree_Depth;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class Solution {
+    //递归
     public int TreeDepth(TreeNode root) {
         return root == null ? 0 : Math.max(TreeDepth(root.left), TreeDepth(root.right)) + 1;
     }

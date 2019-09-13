@@ -1,4 +1,4 @@
-package JianZhiOffer36_First_Common_Nodes_in_Lists;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer36_First_Common_Nodes_in_Lists;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -7,6 +7,7 @@ public class Solution {
     public ListNode FindFirstCommonNode1(ListNode pHead1, ListNode pHead2) {
         int len1 = len(pHead1);
         int len2 = len(pHead2);
+        //长链表先走过多余的节点，然后同步向后遍历
         if (len1 > len2)
             pHead1 = walkStep(pHead1, len1 - len2);
         else

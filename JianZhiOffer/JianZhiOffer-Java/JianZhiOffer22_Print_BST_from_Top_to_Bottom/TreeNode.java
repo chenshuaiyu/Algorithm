@@ -1,4 +1,4 @@
-package JianZhiOffer22_Print_BST_from_Top_to_Bottom;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer22_Print_BST_from_Top_to_Bottom;
 
 public class TreeNode {
     int val = 0;

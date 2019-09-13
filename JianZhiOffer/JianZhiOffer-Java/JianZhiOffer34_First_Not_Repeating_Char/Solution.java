@@ -1,4 +1,4 @@
-package JianZhiOffer34_First_Not_Repeating_Char;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer34_First_Not_Repeating_Char;
 
 import java.util.HashMap;
 import java.util.Map;

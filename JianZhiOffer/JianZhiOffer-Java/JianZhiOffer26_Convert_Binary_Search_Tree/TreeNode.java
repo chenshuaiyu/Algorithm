@@ -1,4 +1,4 @@
-package JianZhiOffer26_Convert_Binary_Search_Tree;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer26_Convert_Binary_Search_Tree;
 
 public class TreeNode {
     int val = 0;

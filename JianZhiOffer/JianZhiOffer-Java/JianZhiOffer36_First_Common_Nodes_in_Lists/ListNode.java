@@ -1,4 +1,4 @@
-package JianZhiOffer36_First_Common_Nodes_in_Lists;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer36_First_Common_Nodes_in_Lists;
 
 public class ListNode {
     int val;

@@ -1,4 +1,4 @@
-package JianZhiOffer40_Numbers_Appear_Once;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer40_Numbers_Appear_Once;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -19,6 +19,7 @@ public class Solution {
         num2[0] = (int) arr[1];
     }
 
+    //时间复杂度为O(n)，空间复杂度为O(1)
     public void FindNumsAppearOnce1(int[] array, int num1[], int num2[]) {
         int n = 0;
         for (int i = 0; i < array.length; i++)

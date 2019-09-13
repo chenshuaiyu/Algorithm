@@ -1,4 +1,4 @@
-package JianZhiOffer29_K_Least_Numbers;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer29_K_Least_Numbers;
 
 import java.util.ArrayList;
 import java.util.Comparator;

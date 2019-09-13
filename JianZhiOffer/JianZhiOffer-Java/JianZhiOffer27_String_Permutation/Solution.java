@@ -1,4 +1,4 @@
-package JianZhiOffer27_String_Permutation;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer27_String_Permutation;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,6 +12,7 @@ public class Solution {
         return ans;
     }
 
+    //使用递归
     private void helper(char[] chars, int i, ArrayList<String> ans) {
         if (i == chars.length - 1) {
             String s = String.valueOf(chars);

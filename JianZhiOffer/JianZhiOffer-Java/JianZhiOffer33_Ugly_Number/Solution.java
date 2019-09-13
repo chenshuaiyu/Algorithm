@@ -1,4 +1,4 @@
-package JianZhiOffer33_Ugly_Number;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer33_Ugly_Number;
 
 public class Solution {
     public int GetUglyNumber_Solution(int index) {

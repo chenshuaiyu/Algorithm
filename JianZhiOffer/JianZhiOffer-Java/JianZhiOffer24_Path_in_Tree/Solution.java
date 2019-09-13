@@ -1,4 +1,4 @@
-package JianZhiOffer24_Path_in_Tree;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer24_Path_in_Tree;
 
 import java.util.ArrayList;
 
@@ -15,6 +15,7 @@ public class Solution {
         if (root == null) return;
         if (target < root.val) return;
         list.add(root.val);
+        //找到一条路径
         if (target == root.val && root.left == null && root.right == null)
             ans.add(new ArrayList<>(list));
         if (root.left != null)

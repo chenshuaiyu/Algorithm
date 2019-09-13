@@ -1,4 +1,4 @@
-package JianZhiOffer24_Path_in_Tree;
+package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer24_Path_in_Tree;
 
 public class TreeNode {
     int val = 0;
