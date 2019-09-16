@@ -1,4 +1,4 @@
-package LeetCode0002_Add_Two_Numbers;
+package LeetCode.LeetCode_Java.LeetCode0002_Add_Two_Numbers;
 
 /**
  * Coder : chenshuaiyu

@@ -1,4 +1,4 @@
-package LeetCode0002_Add_Two_Numbers;
+package LeetCode.LeetCode_Java.LeetCode0002_Add_Two_Numbers;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -25,7 +25,7 @@ public class Solution {
             current = current.next;
         }
         if (n > 0)
-            current.val += n;
+            current.next = new ListNode(n);
         return l.next;
     }
 
