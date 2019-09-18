@@ -1,55 +1,58 @@
-package LeetCode0003_Longest_Substring_Without_Repeating_Characters;
-
-import java.util.Arrays;
-import java.util.HashMap;
+package LeetCode.LeetCode_Java.LeetCode0003_Longest_Substring_Without_Repeating_Characters;
 
 /**
  * Coder : chenshuaiyu
  * Time : 2018/11/13 18:38
  */
 public class Solution {
-
-    // 暴力法
-    public int lengthOfLongestSubstring1(String s) {
-        String subString = "";
+    //暴力法
+    public int lengthOfLongestSubstring2(String s) {
+        int ans = 0;
         for (int i = 0; i < s.length(); i++) {
-            String str = "" + s.charAt(i);
+            StringBuilder sb = new StringBuilder(s.charAt(i) + "");
             for (int j = i + 1; j < s.length(); j++) {
-                if (str.contains(s.charAt(j) + "")) {
+                if (sb.indexOf(s.charAt(j) + "") != -1) {
                     break;
                 } else {
-                    str += s.charAt(j);
+                    sb.append(s.charAt(j));
                 }
             }
-            if (str.length() > subString.length()){
-                subString = str;
-            }
+            ans = Math.max(sb.length(), ans);
         }
-        return subString.length();
+        return ans;
     }
 
-    // 滑动窗口
+    //滑动窗口
     public int lengthOfLongestSubstring(String s) {
-        String subString = "";
-        String str = "";
+        StringBuilder sb = new StringBuilder();
+        int ans = 0;
         for (int i = 0; i < s.length(); i++) {
-            if (!str.contains(s.charAt(i) + ""))
-                str += s.charAt(i);
-            else {
-                str += s.charAt(i);
-                int p = str.indexOf(s.charAt(i));
-                str = str.substring(p + 1);
+            if (sb.indexOf(s.charAt(i) + "") == -1) {
+                sb.append(s.charAt(i));
+            } else {
+                sb.append(s.charAt(i));
+                sb = sb.delete(0, sb.indexOf(s.charAt(i) + "") + 1);
             }
-            if (subString.length() < str.length()) {
-                subString = str;
-            }
+            ans = Math.max(sb.length(), ans);
         }
-        return subString.length();
+        return ans;
+    }
+
+    //优化的滑动窗口
+    public int lengthOfLongestSubstring1(String s) {
+        int[] arr = new int[128];
+        int ans = 0;
+        for (int i = 0, j = 0; j < s.length(); j++) {
+            i = Math.max(arr[s.charAt(j)], i);
+            ans = Math.max(ans, j - i + 1);
+            arr[s.charAt(j)] = j + 1;
+        }
+        return ans;
     }
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int num = solution.lengthOfLongestSubstring("pwwkew");
+        int num = solution.lengthOfLongestSubstring(" ");
         System.out.println(num);
     }
 }

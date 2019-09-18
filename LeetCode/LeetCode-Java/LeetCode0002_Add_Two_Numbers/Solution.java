@@ -1,14 +1,10 @@
 package LeetCode.LeetCode_Java.LeetCode0002_Add_Two_Numbers;
 
-import java.util.Arrays;
-import java.util.HashMap;
-
 /**
  * Coder : chenshuaiyu
  * Time : 2018/11/13 18:38
  */
 public class Solution {
-
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode l = new ListNode(0);
         ListNode current = l;
@@ -24,8 +20,11 @@ public class Solution {
                 l2 = l2.next;
             current = current.next;
         }
-        if (n > 0)
+        if (n > 0) {
             current.next = new ListNode(n);
+            current = current.next;
+        }
+        current.next = null;
         return l.next;
     }
 

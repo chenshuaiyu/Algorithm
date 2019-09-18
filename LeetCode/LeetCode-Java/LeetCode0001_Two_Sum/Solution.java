@@ -1,4 +1,4 @@
-package LeetCode0001_Two_Sum;
+package LeetCode.LeetCode_Java.LeetCode0001_Two_Sum;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -8,7 +8,6 @@ import java.util.HashMap;
  * Time : 2018/11/13 18:38
  */
 public class Solution {
-
     // 查表法，如果在 HashMap 中找到差值，则返回，否则将此元素加入 HashMap
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
