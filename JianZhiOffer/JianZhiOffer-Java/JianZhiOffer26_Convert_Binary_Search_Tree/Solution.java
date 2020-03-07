@@ -4,6 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
+    TreeNode cur = null;
+    TreeNode head = null;
+
+    public TreeNode Convert2(TreeNode pRootOfTree) {
+        inorder(pRootOfTree);
+        return head;
+    }
+
+    private void inorder(TreeNode node) {
+        if (node == null) return;
+        inorder(node.left);
+        if (cur == null) {
+            cur = node;
+            head = cur;
+        } else {
+            cur.right = node;
+            node.left = cur;
+            cur = cur.right;
+        }
+        inorder(node.right);
+    }
+
     public TreeNode Convert(TreeNode pRootOfTree) {
         if (pRootOfTree == null)
             return null;

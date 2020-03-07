@@ -4,6 +4,26 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Solution {
+    public static int GetNumberOfK2(int[] array, int k) {
+        int l = 0, r = array.length - 1, mid;
+        while (l <= r) {
+            mid = (l + r) >>> 1;
+            if (array[mid] > k) {
+                r = mid - 1;
+            } else {
+                l = mid + 1;
+            }
+        }
+        int ans = 0;
+        for (int i = l; i < array.length && array[i] == k; i++) {
+            ans++;
+        }
+        for (int i = l - 1; i >= 0 && array[i] == k; i--) {
+            ans++;
+        }
+        return ans;
+    }
+
     public int GetNumberOfK(int[] array, int k) {
         if (array.length == 0) return 0;
         int firstk = getFirstK(array, k, 0, array.length - 1);

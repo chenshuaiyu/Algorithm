@@ -9,6 +9,26 @@ public class Solution {
     //    这里要特别注意~返回任意重复的一个，赋值duplication[0]
     // Return value:       true if the input is valid, and there are some duplications in the array number
     //                     otherwise false
+    public boolean duplicate2(int numbers[], int length, int[] duplication) {
+        //对0 -（n-1）进行归位，出现冲突时即为重复
+        if (numbers == null || numbers.length == 0)
+            return false;
+        for (int i = 0; i < numbers.length; i++) {
+            int index = numbers[i];
+            if (i != index) {
+                if (numbers[index] == index) {
+                    duplication[0] = index;
+                    return true;
+                } else {
+                    int t = numbers[index];
+                    numbers[index] = index;
+                    numbers[i] = t;
+                }
+            }
+        }
+        return false;
+    }
+
     public boolean duplicate(int numbers[], int length, int[] duplication) {
         if (numbers == null || numbers.length == 0) {
             duplication[0] = -1;
