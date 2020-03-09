@@ -2,6 +2,21 @@ package JianZhiOffer.JianZhiOffer_Java.JianZhiOffer06_Min_Number_in_Rotated_Arra
 
 public class Solution {
     public int minNumberInRotateArray(int[] array) {
+        int l = 0, r = array.length - 1, mid;
+        while (l < r) {
+            if (array[l] < array[r])
+                return array[l];
+            mid = l + (r - l) / 2;
+            if (array[mid] > array[l])
+                l = mid + 1;
+            else if (array[mid] < array[r])
+                r = mid;
+            else l++;
+        }
+        return array[l];
+    }
+
+    public int minNumberInRotateArray1(int[] array) {
         if (array.length == 0) return 0;
         int l = 0, r = array.length - 1, mid;
         while (l < r) {
@@ -16,7 +31,7 @@ public class Solution {
         return array[l];
     }
 
-    public int minNumberInRotateArray1(int[] array) {
+    public int minNumberInRotateArray2(int[] array) {
         if (array.length == 0) return 0;
         int l = 0, r = array.length - 1, mid;
         while (l < r) {

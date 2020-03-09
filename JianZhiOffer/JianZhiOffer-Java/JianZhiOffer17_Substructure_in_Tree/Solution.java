@@ -8,9 +8,9 @@ public class Solution {
             if (root1.val == root2.val)
                 ans = isSubtree(root1, root2);
             if (!ans)
-                ans = isSubtree(root1.left, root2);
+                ans = HasSubtree(root1.left, root2);
             if (!ans)
-                ans = isSubtree(root1.right, root2);
+                ans = HasSubtree(root1.right, root2);
         }
         return ans;
     }
